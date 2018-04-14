@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="login page"/>
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Giriş yap"
+        android:textSize="35sp"
+        android:layout_marginTop="15dp"/>
+
+    <com.dd.processbutton.iml.GenerateProcessButton
+        android:id="@+id/face_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:text="Fcebook İle Giriş Yap"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:pb_textProgress="İşleniyor" />
+
+    <com.dd.processbutton.iml.GenerateProcessButton
+        android:id="@+id/googleButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="150dp"
+        android:text="Google İle Giriş Yap"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:pb_textProgress="İşleniyor"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+</RelativeLayout>
